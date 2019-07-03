@@ -18,6 +18,8 @@ Screenshots
 
 ![pi](demo/pi.png)
 
+![vim](demo/vim.png)
+
 Functionality
 -------------
 
