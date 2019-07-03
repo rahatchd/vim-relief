@@ -1,6 +1,6 @@
 gruvcube
 ========
-a minimal but flashy tmux.vim desktop/IDE `conf`
+> a minimal but flashy tmux.vim desktop/IDE `conf`
 
 Philosophy
 ---------
@@ -41,7 +41,7 @@ prefix + - (vertical split)
 ```
 prefix + h|j|k|l
 ```
-* use sensible standards everyone can agree on, not esoteric idiosyncrasies nobody likes
+* use sensible standards everybody agrees on, not esoteric idiosyncrasies everybody disagrees on
 ```
 Plugin 'tpope/vim-sensible'
 set -g @plugin 'tmux-plugins/tmux-sensible'
