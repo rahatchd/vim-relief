@@ -18,7 +18,11 @@ Screenshots
 
 ![pi](demo/pi.png)
 
+![mojave](demo/mojave.png)
+
 ![vim](demo/vim.png)
+
+![ycm](demo/ycm.png)
 
 Functionality
 -------------
