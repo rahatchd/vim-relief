@@ -26,6 +26,8 @@ Screenshots
 
 ![vim2](demo/vim2.png)
 
+![ctrlspace](demo/ctrlspace.png)
+
 ![ycm](demo/ycm.png)
 
 Features
