@@ -68,8 +68,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 autocmd BufWinEnter * NERDTreeMirror
 
 " jedi-vim
-let g:ycm_filetype_specific_completion_to_disable={'python' : 1}
-let g:ycm_filetype_blacklist={'python' : 1} 
+let g:jedi#completions_enabled=0
 
 " javascript
 let g:javascript_plugin_jsdoc=1
