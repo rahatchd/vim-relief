@@ -1,6 +1,6 @@
 gruvcube
 ========
-> a minimal but flashy tmux.vim desktop/IDE `conf`
+> a minimal but flashy tmux.vim desktop/IDE `.dotfile` conf
 
 Philosophy
 ---------
@@ -77,7 +77,7 @@ Inspiration
 I would be remiss not to acknowledge:
 1. [gruvbox](https://github.com/morhetz/gruvbox) for the theme,
 2. [desktop](https://www.reddit.com/r/desktops/) for the motivation to compile this conf,
-3. and my colleague [Hatef](https://github.com/wildthingz), who got me started in my journey to minimal but flashy development.
+3. and my colleague [Hatef](https://github.com/wildthingz), who got me started on my journey to minimal but flashy development.
 
 Installation
 ------------
@@ -85,7 +85,7 @@ Installation
 1. Install git, vim, and tmux using `apt` on ubuntu and `brew` on OSX. More detailed instructions for multiple distros to come. gruvcube will likely only ever support Unix based systems tho.  
 2. Install [Vundle](https://github.com/VundleVim/Vundle.vim), [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe), and [tpm](https://github.com/tmux-plugins/tpm)  
 3. Copy `.vimrc` and `.tmux.conf` into your home directory
-4. Install a [nerd-font](https://github.com/ryanoasis/vim-devicons/wiki/Installation)
+4. Install a [nerd-font](http://nerdfonts.com/)
 5. Open tmux and run `tmux source-file .tmux.conf`; open vim and run `:PluginInstall`
 
 Worth a `README.md`
