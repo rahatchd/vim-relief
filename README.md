@@ -28,31 +28,38 @@ Screenshots
 
 ![ycm](demo/ycm.png)
 
-Functionality
--------------
+Features
+--------
 
-* vim and tmux sitting in a NERDTree
+* cross tool compatibility - find out what it means to me
 ```
 set -g @plugin 'tmux-pluginx/vim-tmux'
-
-# vim filename in pane title
-set-window-option -g window-status-current-format "[#I #W#T]"
-set-window-option -g window-status-format "[#I #W#T]"
-
-" filename in tmux pane title
-autocmd BufWinEnter * let &titlestring=' ' . expand("%:t")
-set title
-
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tmux-plugins/vim-tmux-focus-events'
+Plugin 'edkolev/tmuxline.vim'
+```
+* are we ide yet? oh we're lsp baby
+```
+Plugin 'vim-ctrlspace/vim-ctrlspace'
+Plugin 'craigemery/vim-autotag'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'plytophogy.vim-virtualenv'
+Plugin 'w0rp/ale'
+```
+* gruvbox and tmux sitting in a NERDTree, A.I.R.L.I.N.E
+```
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline'
 ```
 * create multiple panes with intuitive bindings
 ```
 prefix + | (horizontal split)
 prefix + - (vertical split)
 ```
-* traverse multiple terminal panes with vim-esque ease
+* traverse across vim and tmux panes with vim-esque ease
 ```
-prefix + h|j|k|l
+ctrl + h|j|k|l
 ```
 * use sensible standards everybody agrees on, not esoteric idiosyncrasies everybody disagrees on
 ```
@@ -67,8 +74,6 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'Townk/vim-autoclose'
 Plugin 'alvan/vim-closetag'
 Plugin 'nerdtree-git-plugin'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'w0rp/ale'
 ```
 
 Inspiration
@@ -98,4 +103,6 @@ Worth a `README.md`
 * [spicycode`.tmux.conf`](https://gist.github.com/spicycode/1229612) (\*second best and greatest tmux.conf ever)
 * [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 * [Devicons nerd-font](https://github.com/ryanoasis/vim-devicons/wiki/Installation)
+* [ycm vs jedi-vim](https://github.com/davidhalter/jedi-vim/issues/119)
+* [airline tmux](https://github.com/vim-airline/vim-airline/issues/829)
 
