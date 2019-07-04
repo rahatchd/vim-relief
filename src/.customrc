@@ -1,0 +1,6 @@
+### customrc
+# custom installs
+
+# example (rust)
+export PATH="$HOME/.cargo/bin:$PATH"
+
