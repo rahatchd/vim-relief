@@ -24,8 +24,6 @@ Screenshots
 
 ![vim](demo/vim.png)
 
-![vim2](demo/vim2.png)
-
 ![ctrlspace](demo/ctrlspace.png)
 
 ![ycm](demo/ycm.png)
@@ -89,11 +87,99 @@ I would be remiss not to acknowledge:
 Installation
 ------------
 
-1. Install git, vim, and tmux using `apt` on ubuntu and `brew` on OSX. More detailed instructions for multiple distros to come. gruvcube will likely only ever support Unix based systems tho.  
-2. Install [Vundle](https://github.com/VundleVim/Vundle.vim), [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe), and [tpm](https://github.com/tmux-plugins/tpm)  
-3. Copy `.vimrc` and `.tmux.conf` into your home directory
-4. Install a [nerd-font](http://nerdfonts.com/)
-5. Open tmux and run `tmux source-file .tmux.conf`; open vim and run `:PluginInstall`
+#### Requirements
+
+* Operating System: Unix based (tested on Ubuntu, Pop!\_OS, Raspbian, macOS Mojave)
+* Hardware: you can probably run this on a potato (at least without ycm and ctrlspace)
+* Software: `git`, `vim`, and `tmux`
+
+#### Setup
+
+1. Install [Vundle](https://github.com/VundleVim/Vundle.vim), [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe), and [tpm](https://github.com/tmux-plugins/tpm) (to be automated)
+2. Install a [nerd-font](http://nerdfonts.com/) and enable it in your terminal (installation to be automated)  
+(2.9 (optional)- backup your old dotfiles)
+3. Copy contents of `src/` into your home directory (to be automated soon)
+
+#### Configure (to be automated soon)
+
+1. Run `source ~/.bashrc`, this will supply you with aliases needed for the following steps
+2. Run `customrc` to append your own configuration to bashrc (autosourced on exit)
+3. Run `aliases` to append your own aliases to bashrc (autosourced on exit)
+3. Run `secretsrc` to append your api tokens and credentials to bashrc (autosourced on exit)
+4. Run `vimrc` to edit the vim config (plugins autoinstalled on exit)
+5. Run `tmuxconf` to edit the tmux config (plugins autoinstalled on exit)
+
+Upcoming Features
+-----------------
+
+* auto install script for dependencies
+* auto load script (reversible) for dotfiles
+
+Scope Creep
+-----------
+
+* installer written in rust
+* gruvarch linux distro
+* apt/brew
+* auto update script (dependencies included)
+* versions:
+<table>
+  <thead>
+    <tr>
+      <th>Version</th> <th>Supported Features</th> <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gruvcube (<em>flagship model</em>)</td>
+      <td>
+        <ul>
+          <li>all</li>
+          <li>of</li>
+          <li>them</li>
+        </ul>
+      <td>
+        Turns your vim into a beautiful lsp powered ide.
+        Migrants from JetBrains will like this.
+      </td>
+    </tr>
+    <tr>
+      <td>gruvcube.satellite</td>
+      <td>
+        <ul>
+          <li>ctrlspace + airline </li>
+          <li>some typography automation
+            <ul>
+              <li>autotag</li>
+              <li>autoclose</li>
+              <li>autindent</li>
+            </ul>
+          </li>
+          <li><strike>lsp</strike></li>
+          <li><strike>autocompletion</strike></li>
+          <li><strike>linting</strike></li>
+          <li><code>.&#160;src/gruvcube.bear</code></td>
+      <td>
+        Enhanced and beautiful vim experience without programming language support.
+        Ideal for non-coders/hard-corers looking for the aesthetic.
+      </td>
+    </tr>
+    <tr>
+      <td>gruvcube.bear</td>
+      <td>
+        <ul>
+          <li>gruvbox theme</li>
+          <li>sensible configuration</li>
+          <li>seamless navigation</li>
+          <li><strike><strong>anything else</strong></strike></li>
+        </ul>
+      <td>
+        The bare minimum for the bears living among us.
+        Ideal if you'd like to customize your gruvcube.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Worth a `README.md`
 -------------------
@@ -107,4 +193,3 @@ Worth a `README.md`
 * [Devicons nerd-font](https://github.com/ryanoasis/vim-devicons/wiki/Installation)
 * [ycm vs jedi-vim](https://github.com/davidhalter/jedi-vim/issues/119)
 * [airline tmux](https://github.com/vim-airline/vim-airline/issues/829)
-
