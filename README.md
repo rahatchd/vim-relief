@@ -91,16 +91,22 @@ Installation
 
 * Operating System: Unix based (tested on Ubuntu, Pop!\_OS, Raspbian, macOS Mojave)
 * Hardware: you can probably run this on a potato (at least without ycm and ctrlspace)
-* Software: `git`, `vim`, and `tmux`
+* Software: `git`, `vim`, and `tmux` (for ycm `python2.7` or `python3.5` - whichever vim supports)
 
 #### Setup
 
-1. Install [Vundle](https://github.com/VundleVim/Vundle.vim), [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe), and [tpm](https://github.com/tmux-plugins/tpm) (to be automated)
+##### Automatic
+
+1. Run `. install.sh` from the repo root dir - this will backup your current dotfiles to gruvcube/backup
+2. Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) (optional - to be automated)
 2. Install a [nerd-font](http://nerdfonts.com/) and enable it in your terminal (installation to be automated)  
 (2.9 (optional)- backup your old dotfiles)
-3. Copy contents of `src/` into your home directory (to be automated soon)
 
-#### Configure (to be automated soon)
+##### Manual
+
+1. Copy contents of gruvcube/src to your home directory and source them
+
+#### Configuration (done at the end automatic setup)
 
 1. Run `source ~/.bashrc`, this will supply you with aliases needed for the following steps
 2. Run `customrc` to append your own configuration to bashrc (autosourced on exit)
@@ -112,8 +118,10 @@ Installation
 Upcoming Features
 -----------------
 
-* auto install script for dependencies
-* auto load script (reversible) for dotfiles
+- [x] auto install script for dependencies
+- [x] auto load script (reversible) for dotfiles
+- [ ] auto install ycm
+- [ ] usage instructions
 
 Scope Creep
 -----------
