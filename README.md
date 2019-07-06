@@ -71,7 +71,7 @@ Plugin 'tpope/vim-surround'
 ```
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'tpope/vim-sleuth'
-Plugin 'Townk/vim-autoclose'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'alvan/vim-closetag'
 Plugin 'nerdtree-git-plugin'
 ```
@@ -195,9 +195,13 @@ Worth a `README.md`
 * [sensible.vim](https://github.com/tpope/vim-sensible)
 * [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
 * [surround.vim](https://github.com/tpope/vim-surround)
+* [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [vim + tmux pane titles](https://stackoverflow.com/questions/15123477/tmux-tabs-with-name-of-file-open-in-vim/15842066#15842066)
 * [spicycode`.tmux.conf`](https://gist.github.com/spicycode/1229612) (\*second best and greatest tmux.conf ever)
 * [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 * [Devicons nerd-font](https://github.com/ryanoasis/vim-devicons/wiki/Installation)
 * [ycm vs jedi-vim](https://github.com/davidhalter/jedi-vim/issues/119)
 * [airline tmux](https://github.com/vim-airline/vim-airline/issues/829)
+* [bash rc vs \_profile](https://superuser.com/a/244990)
+* [pioneer](https://gist.github.com/tarruda/5158535) (shoulders i wish i stood on)
+
