@@ -7,7 +7,7 @@ line() {
 
 line = 
 line \~
-echo "!gruvcube installer | prepare to be automated"
+echo "~~~ gruvcube installer ~~~"
 line \~
 echo
 
@@ -49,23 +49,28 @@ case $yn in
     *)
         echo "you can can edit your .aliases anytime using the command customrc"
 esac
-read -p "¿ do you want to edit .customrc (not tracked by gruvcube) ? [Y/n] " yn
-case $yn in
-    [Yy]*)
-        customrc
-        ;;
-    *)
-        echo "you can can edit your .customrc anytime using the command customrc"
-esac
-read -p "¿ do you want to edit .secretsrc (not tracked by gruvcube) ? [Y/n] " yn
-case $yn in
-    [Yy]*)
-        secretsrc
-        ;;
-    *)
-        echo "you can can edit your .secretsrc anytime using the command secretsrc"
-esac
-
+if [ ! -f ~/.customrc ]; then
+    cp $gruvdir/src/.customrc $HOME/.customrc
+    read -p "¿ do you want to edit .customrc (not tracked by gruvcube) ? [Y/n] " yn
+    case $yn in
+        [Yy]*)
+            customrc
+            ;;
+        *)
+            echo "you can can edit your .customrc anytime using the command customrc"
+    esac
+fi
+if [ ! -f ~/.secretsrc ]; then
+    cp $gruvdir/src/.secretsrc $HOME/.secretsrc
+    read -p "¿ do you want to edit .secretsrc (not tracked by gruvcube) ? [Y/n] " yn
+    case $yn in
+        [Yy]*)
+            secretsrc
+            ;;
+        *)
+            echo "you can can edit your .secretsrc anytime using the command secretsrc"
+    esac
+fi
 if [ ! -d "$HOME/.vim/bundle/Vundle.vim"  ]; then
     echo "> installing Vundle (may require git login) <"
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -92,7 +97,7 @@ fi
 
 echo
 line -
-echo "DONE! gruvcube is installed and (all)ready to use"
+echo "~~~ DONE ~~~"
 line -
 line = 
 
