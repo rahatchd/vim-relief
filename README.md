@@ -14,19 +14,19 @@ Just because its lightweight doesn't mean its not pretty.
 Screenshots
 -----------
 
-![pop-os](demo/pop-os.png)
+![pop-os](https://i.imgur.com/JZ5HOu4.png)
 
-![pi](demo/pi.png)
+![pi](https://i.imgur.com/SuMosQq.png)
 
-![mojave](demo/mojave.png)
+![mojave](https://i.imgur.com/tIroG4i.jpg)
 
-![ubuntu](demo/ubuntu.png)
+![ubuntu](https://i.imgur.com/bbH41Wl.png)
 
-![vim](demo/vim.png)
+![vim](https://i.imgur.com/wKFX8IN.png)
 
-![ctrlspace](demo/ctrlspace.png)
+![ctrlspace](https://i.imgur.com/H7NKywQ.png)
 
-![ycm](demo/ycm.png)
+![ycm](https://i.imgur.com/ro0MCP7.jpg)
 
 Features
 --------
