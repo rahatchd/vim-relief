@@ -1,6 +1,6 @@
 #!/bin/bash
 backup="bak_$(date +%F_%H-%M-%S)"
-gruvdir=$(dirname $0)
+gruvdir=$PWD
 line() {
     printf %$(tput cols)s | tr " " $1 && echo
 }
@@ -11,7 +11,7 @@ echo "!gruvcube installer | prepare to be automated"
 line \~
 echo
 
-if [ ! -d "$PWD/backup" ] ; then
+if [ ! -d "$gruvdir/backup" ] ; then
     echo "creating backup directory"
     mkdir backup
     line -
