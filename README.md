@@ -195,6 +195,7 @@ Worth a `README.md`
 * [sensible.vim](https://github.com/tpope/vim-sensible)
 * [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
 * [surround.vim](https://github.com/tpope/vim-surround)
+* [vim-ctrlspace](https://github.com/vim-ctrlspace/vim-ctrlspace)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [vim + tmux pane titles](https://stackoverflow.com/questions/15123477/tmux-tabs-with-name-of-file-open-in-vim/15842066#15842066)
 * [spicycode`.tmux.conf`](https://gist.github.com/spicycode/1229612) (\*second best and greatest tmux.conf ever)
