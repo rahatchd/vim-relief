@@ -1,4 +1,7 @@
-# dotfile aliases
+# start tmux on login
+[[ $TERM != "screen" ]] && exec tmux
+
+# aliases
 alias vimrc="vim ~/.vimrc && vim +PluginClean +qall && vim +PluginInstall +qall"
 alias tmuxconf="vim ~/.tmux.conf && tmux source-file ~/.tmux.conf"
 
