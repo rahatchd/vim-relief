@@ -1,5 +1,5 @@
-gruvcube
-========
+vim-relief
+==========
 > a minimal but flashy tmux.vim desktop/IDE `.dotfile` conf
 
 Philosophy
@@ -31,6 +31,8 @@ Screenshots
 Features
 --------
 
+relief is really functional
+
 * cross tool compatibility - find out what it means to me
 ```
 set -g @plugin 'tmux-pluginx/vim-tmux'
@@ -47,7 +49,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'plytophogy.vim-virtualenv'
 Plugin 'w0rp/ale'
 ```
-* gruvbox and tmux sitting in a NERDTree, A.I.R.L.I.N.E
+* vim and tmux sitting in a NERDTree, A.I.R.L.I.N.E
 ```
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline'
@@ -80,7 +82,7 @@ Inspiration
 -----------
 
 I would be remiss not to acknowledge:
-1. [gruvbox](https://github.com/morhetz/gruvbox) for the theme,
+1. [gruvbox](https://github.com/morhetz/gruvbox) for the OG theme of vim-relief (not pre-installed with theme now),
 2. [desktop](https://www.reddit.com/r/desktops/) for the motivation to compile this conf,
 3. and my colleague [Hatef](https://github.com/wildthingz), who got me started on my journey to minimal but flashy development.
 
@@ -100,12 +102,12 @@ Installation
 1. Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) (optional - to be automated)
 2. Install a [nerd-font](http://nerdfonts.com/) and enable it in your terminal (installation to be automated)  
 3. Run `. install.sh` from the repo root dir
+4. Install a [terminal](https://mayccoll.github.io/Gogh/)/[vim](https://github.com/rafi/awesome-vim-colorschemes)/[vim-airline](https://github.com/vim-airline/vim-airline-themes/tree/master/autoload/airline/themes) theme
+  1. edit `.vimrc` to apply your theme
 
 Upcoming Features
 -----------------
 
-- [x] auto install script for dependencies
-- [x] auto load script (reversible) for dotfiles
 - [ ] auto install ycm
 - [ ] usage instructions
 
@@ -113,7 +115,7 @@ Scope Creep
 -----------
 
 * installer written in rust
-* gruvarch linux distro
+* arch-relief linux distro
 * apt/brew
 * auto update script (dependencies included)
 * versions:
@@ -125,7 +127,7 @@ Scope Creep
   </thead>
   <tbody>
     <tr>
-      <td>gruvcube (<em>flagship model</em>)</td>
+      <td>relief (<em>flagship model</em>)</td>
       <td>
         <ul>
           <li>all</li>
@@ -138,7 +140,7 @@ Scope Creep
       </td>
     </tr>
     <tr>
-      <td>gruvcube.satellite</td>
+      <td>relief.satellite</td>
       <td>
         <ul>
           <li>ctrlspace + airline </li>
@@ -152,24 +154,23 @@ Scope Creep
           <li><strike>lsp</strike></li>
           <li><strike>autocompletion</strike></li>
           <li><strike>linting</strike></li>
-          <li><code>.&#160;src/gruvcube.bear</code></td>
+          <li><code>.&#160;src/relief.bear</code></td>
       <td>
         Enhanced and beautiful vim experience without programming language support.
         Ideal for non-coders/hard-corers looking for the aesthetic.
       </td>
     </tr>
     <tr>
-      <td>gruvcube.bear</td>
+      <td>relief.bear</td>
       <td>
         <ul>
-          <li>gruvbox theme</li>
           <li>sensible configuration</li>
           <li>seamless navigation</li>
           <li><strike><strong>anything else</strong></strike></li>
         </ul>
       <td>
         The bare minimum for the bears living among us.
-        Ideal if you'd like to customize your gruvcube.
+        Ideal if you'd like to customize your own vim-relief.
       </td>
     </tr>
   </tbody>

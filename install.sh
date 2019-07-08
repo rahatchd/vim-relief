@@ -1,31 +1,31 @@
 #!/bin/bash
 backup="bak_$(date +%F_%H-%M-%S)"
-gruvdir=$PWD
+reliefdir=$PWD
 
-echo "installing gruvcube"
+echo "installing vim-relief"
 
 # backups
-if [ ! -d "$gruvdir/backup" ] ; then
-    echo "creating backups directory : $gruvdir/backup"
+if [ ! -d "$reliefdir/backup" ] ; then
+    echo "creating backups directory : $reliefdir/backup"
     mkdir backup
 fi
 mkdir backup/$backup
 
 # copy dotfiles
-dotfiles=( "gruvcuberc" "vimrc" "tmux.conf" )
+dotfiles=( "reliefrc" "vimrc" "tmux.conf" )
 for dotfile in "${dotfiles[@]}" ; do
-    gruvcube_dotfile="$gruvdir/src/.$dotfile"
+    relief_dotfile="$reliefdir/src/.$dotfile"
     home_dotfile=~/."$dotfile"
-    backup_dotfile="$gruvdir/backup/$backup/.$dotfile.bak"
+    backup_dotfile="$reliefdir/backup/$backup/.$dotfile.bak"
     if [ -f $home_dotfile ] ; then
         echo "backing up : $backup_dotfile"
         cp $home_dotfile $backup_dotfile
     fi
-    cp $gruvcube_dotfile $home_dotfile
+    cp $relief_dotfile $home_dotfile
 done
 
 # source dotfiles
-echo "source ~/.gruvcuberc" >> ~/.bashrc
+echo "source ~/.reliefrc" >> ~/.bashrc
 # vim deps/conf
 if [ ! -d ~/.vim/bundle/Vundle.vim  ]; then
     echo "installing Vundle (may require git login)"

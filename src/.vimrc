@@ -1,5 +1,6 @@
 set number
 syntax on
+highlight Normal ctermbg=none
 
 " Vundle
 set nocompatible
@@ -17,7 +18,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sleuth'
 Plugin 'craigemery/vim-autotag'
 Plugin 'majutsushi/tagbar'
-Plugin 'morhetz/gruvbox'
+" Plugin 'morhetz/gruvbox' "<-- choose theme
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'edkolev/tmuxline.vim'
@@ -49,15 +50,19 @@ let g:NERDTreeMapJumpPrevSibling="▴"
 " vim-auto-save
 let g:auto_save=1
 
-" gruvbox
-colorscheme gruvbox
-set background=dark
-highlight Normal ctermbg=none
+" theme
+" colorscheme gruvbox "<-- pick theme
 
-" airline
-let g:airline_theme='gruvbox'
+" vim-airline
+" let g:airline_theme='gruvbox' "<-- pick theme
+let left_sep="\uE0B0"
+let right_sep="\uE0B2"
+let g:airline_powerline_fonts=1
+let g:airline_left_sep=left_sep
+let g:airline_right_sep=right_sep
 let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#formatter='unique_tail_improved'
+let g:airline#extensions#tabline#left_sep=left_sep
+let g:airline#extensions#tabline#right_sep=right_sep
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
