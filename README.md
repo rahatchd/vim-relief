@@ -97,25 +97,9 @@ Installation
 
 #### Setup
 
-##### Automatic
-
-1. Run `. install.sh` from the repo root dir - this will backup your current dotfiles to gruvcube/backup
-2. Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) (optional - to be automated)
+1. Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) (optional - to be automated)
 2. Install a [nerd-font](http://nerdfonts.com/) and enable it in your terminal (installation to be automated)  
-(2.9 (optional)- backup your old dotfiles)
-
-##### Manual
-
-1. Copy contents of gruvcube/src to your home directory and source them
-
-#### Configuration (done at the end automatic setup)
-
-1. Run `source ~/.bashrc`, this will supply you with aliases needed for the following steps
-2. Run `customrc` to append your own configuration to bashrc (autosourced on exit)
-3. Run `aliases` to append your own aliases to bashrc (autosourced on exit)
-3. Run `secretsrc` to append your api tokens and credentials to bashrc (autosourced on exit)
-4. Run `vimrc` to edit the vim config (plugins autoinstalled on exit)
-5. Run `tmuxconf` to edit the tmux config (plugins autoinstalled on exit)
+3. Run `. install.sh` from the repo root dir
 
 Upcoming Features
 -----------------

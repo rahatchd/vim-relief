@@ -1,0 +1,6 @@
+# dotfile aliases
+alias vimrc="vim ~/.vimrc && vim +PluginClean +qall && vim +PluginInstall +qall"
+alias tmuxconf="vim ~/.tmux.conf && tmux source-file ~/.tmux.conf"
+
+# (COMING SOON: tmux-vim yank, tmux gutter, open files from tmux in current folder)
+

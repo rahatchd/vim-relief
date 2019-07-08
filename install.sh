@@ -6,75 +6,26 @@ echo "installing gruvcube"
 
 # backups
 if [ ! -d "$gruvdir/backup" ] ; then
-    echo "creating backup directory"
+    echo "creating backups directory : $gruvdir/backup"
     mkdir backup
-    line -
 fi
 mkdir backup/$backup
 
-# copy dotfiles and make backups
-dotfiles=( "bashrc" "bash_aliases" "vimrc" "tmux.conf" )
+# copy dotfiles
+dotfiles=( "gruvcuberc" "vimrc" "tmux.conf" )
 for dotfile in "${dotfiles[@]}" ; do
     gruvcube_dotfile="$gruvdir/src/.$dotfile"
     home_dotfile=~/."$dotfile"
     backup_dotfile="$gruvdir/backup/$backup/.$dotfile.bak"
-    if [ -f $home_dotfile ]; then
+    if [ -f $home_dotfile ] ; then
         echo "backing up : $backup_dotfile"
         cp $home_dotfile $backup_dotfile
     fi
     cp $gruvcube_dotfile $home_dotfile
 done
 
-# handle .bash_profile (macOS mainly)
-profile_src="[ -r ~/.bashrc ] && source ~/.bashrc"
-if [ -f ~/.bash_profile ] && ! grep -q "$profile_src" ~/.bash_profile; then
-    echo "you can now use bashrc instead of bash_profile"
-    echo "$profile_src" >> ~/.bash_profile
-    source ~/.bash_profile
-else
-    source ~/.bashrc
-fi
-
 # source dotfiles
-read -p "do you want to edit .bashrc ? [Y/n] " yn
-case $yn in
-    [Yy]*)
-        bashrc
-        ;;
-    *)
-        echo "you can can edit your .bashrc anytime using the command bashrc"
-esac
-read -p "do you want to edit .bash_aliases ? [Y/n] " yn
-case $yn in
-    [Yy]*)
-        aliases
-        ;;
-    *)
-        echo "you can can edit your .aliases anytime using the command customrc"
-esac
-if [ ! -f ~/.customrc ]; then
-    cp $gruvdir/src/.customrc ~/.customrc
-    read -p "do you want to edit .customrc (not tracked by gruvcube) ? [Y/n] " yn
-    case $yn in
-        [Yy]*)
-            customrc
-            ;;
-        *)
-            echo "you can can edit your .customrc anytime using the command customrc"
-    esac
-fi
-if [ ! -f ~/.secretsrc ]; then
-    cp $gruvdir/src/.secretsrc ~/.secretsrc
-    read -p "do you want to edit .secretsrc (not tracked by gruvcube) ? [Y/n] " yn
-    case $yn in
-        [Yy]*)
-            secretsrc
-            ;;
-        *)
-            echo "you can can edit your .secretsrc anytime using the command secretsrc"
-    esac
-fi
-
+echo "source ~/.gruvcuberc" >> ~/.bashrc
 # vim deps/conf
 if [ ! -d ~/.vim/bundle/Vundle.vim  ]; then
     echo "installing Vundle (may require git login)"
@@ -90,6 +41,7 @@ elif [[ $(vim --version | grep "+python") ]]; then
 else
     echo "! cannot install ycm (code autocompletion) if vim was built without python support"
 fi
+echo "you can edit your .vimrc by using the alias vimrc"
 
 # tmux deps/conf
 if [ ! -d ~/.tmux/plugins/tpm ]; then
@@ -101,6 +53,7 @@ if [ -n "$TMUX" ]; then
 else
     tmux
 fi
+echo "you can edit your .tmux.conf by using the alias tmuxconf"
 
 echo "installation complete"
 
