@@ -2,6 +2,8 @@ vim-relief
 ==========
 > a minimal but flashy tmux.vim desktop/IDE `.dotfile` conf
 
+**DO NOT USE ON MACOS**
+
 Philosophy
 ---------
 
@@ -77,7 +79,7 @@ Installation
 
 #### Requirements
 
-* Operating System : Unix based (tested on Ubuntu, Pop!\_OS, Raspbian, macOS Mojave)
+* Operating System : ~~Unix based~~ Linux (tested on Ubuntu, Pop!\_OS, Raspbian, ~~macOS Mojave~~)
 * Hardware : you can probably run this on a potato (at least without ycm and ctrlspace)
 * Software : `git`, `vim`, and `tmux`
   * for ycm : `python2.7` or `python3.5` - whichever your vim supports
