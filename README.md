@@ -93,6 +93,8 @@ Installation
 
 * Operating System : Unix based (tested on Ubuntu, Pop!\_OS, Raspbian, macOS Mojave)
 * Hardware : you can probably run this on a potato (at least without ycm and ctrlspace)
+* Terminal : (tested on gnome-terminal, macOS terminal, and alacritty)
+> ! Highly recommend [alacritty](https://github.com/jwilm/alacritty)
 * Software : `git`, `vim`, and `tmux`
   * for ycm : `python2.7` or `python3.5` - whichever your vim supports
   * for search by symbol : [ctags](https://github.com/universal-ctags/ctags/blob/master/docs/autotools.rst)
@@ -103,7 +105,10 @@ Installation
 2. Install a [nerd-font](http://nerdfonts.com/) and enable it in your terminal (installation to be automated)  
 3. Run `. install.sh` from the repo root dir
 4. Install a [terminal](https://mayccoll.github.io/Gogh/)/[vim](https://github.com/rafi/awesome-vim-colorschemes)/[vim-airline](https://github.com/vim-airline/vim-airline-themes/tree/master/autoload/airline/themes) theme
-  1. edit `.vimrc` to apply your theme
+  1. During the installation, edit `.vimrc` to apply your theme
+  2. After the isntallation source `.promptline.sh` to apply the theme to your prompt
+     Using the alias `vimrc` will automatically reload `.promptline.sh` for you
+     Manually, you can delete `.promptline.sh`, and then in vim run `:PromptlineSnapshot ~/.promptline.sh airline`
 
 Upcoming Features
 -----------------
@@ -181,6 +186,7 @@ Worth a `README.md`
 
 * [sensible.vim](https://github.com/tpope/vim-sensible)
 * [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
+* [promptline](https://github.com/edkolev/promptline.vim/blob/master/README.md)
 * [surround.vim](https://github.com/tpope/vim-surround)
 * [vim-ctrlspace](https://github.com/vim-ctrlspace/vim-ctrlspace)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)

@@ -21,6 +21,7 @@ Plugin 'majutsushi/tagbar'
 " Plugin 'morhetz/gruvbox' "<-- choose theme
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'edkolev/promptline.vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -54,7 +55,7 @@ let g:auto_save=1
 " colorscheme gruvbox "<-- pick theme
 
 " vim-airline
-" let g:airline_theme='gruvbox' "<-- pick theme
+" let g:airline_theme='cobalt2' "<-- pick theme
 let left_sep="\uE0B0"
 let right_sep="\uE0B2"
 let g:airline_powerline_fonts=1
@@ -63,6 +64,7 @@ let g:airline_right_sep=right_sep
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#left_sep=left_sep
 let g:airline#extensions#tabline#right_sep=right_sep
+PromptlineSnapshot ~/.promptline.sh airline
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
