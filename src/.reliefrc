@@ -1,5 +1,6 @@
 # start tmux on login
-[[ $TERM != "screen" ]] && exec tmux
+# [[ $TERM != "screen" ]] && exec tmux # use only on LINUX
+# WARNING: can cause macOS terminal to terminate on open
 
 # aliases
 alias vimrc="vim ~/.vimrc && vim +PluginClean +qall && vim +PluginInstall +qall"

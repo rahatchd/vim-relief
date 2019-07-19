@@ -11,22 +11,8 @@ Its just enough ide. Nothing more. Nothing less.
 ### but *Flashy*
 Just because its lightweight doesn't mean its not pretty.
 
-Screenshots
------------
-
-![pop-os](https://i.imgur.com/JZ5HOu4.png)
-
-![pi](https://i.imgur.com/SuMosQq.png)
-
-![mojave](https://i.imgur.com/tIroG4i.jpg)
-
-![ubuntu](https://i.imgur.com/bbH41Wl.png)
-
-![vim](https://i.imgur.com/wKFX8IN.png)
-
-![ctrlspace](https://i.imgur.com/H7NKywQ.png)
-
-![ycm](https://i.imgur.com/ro0MCP7.jpg)
+<!-- # Screenshots
+-------------->
 
 Features
 --------
@@ -106,9 +92,9 @@ Installation
 3. Run `. install.sh` from the repo root dir
 4. Install a [terminal](https://mayccoll.github.io/Gogh/)/[vim](https://github.com/rafi/awesome-vim-colorschemes)/[vim-airline](https://github.com/vim-airline/vim-airline-themes/tree/master/autoload/airline/themes) theme
   1. During the installation, edit `.vimrc` to apply your theme
-  2. After the isntallation source `.promptline.sh` to apply the theme to your prompt
-     Using the alias `vimrc` will automatically reload `.promptline.sh` for you
-     Manually, you can delete `.promptline.sh`, and then in vim run `:PromptlineSnapshot ~/.promptline.sh airline`
+     Then run `:AirlineTheme <theme>`
+     and `:PromptlineSnapshot ~/.promptline.sh airline` and exit vim
+     Then source `~/.promptline.sh`
 
 Upcoming Features
 -----------------
@@ -188,7 +174,7 @@ Worth a `README.md`
 * [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
 * [promptline](https://github.com/edkolev/promptline.vim/blob/master/README.md)
 * [surround.vim](https://github.com/tpope/vim-surround)
-* [vim-ctrlspace](https://github.com/vim-ctrlspace/vim-ctrlspace)
+* [vim-ctrlspace](https://github.com/vim-ctrlspace/vim-ctrlspace/blob/master/doc/ctrlspace.txt)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [vim + tmux pane titles](https://stackoverflow.com/questions/15123477/tmux-tabs-with-name-of-file-open-in-vim/15842066#15842066)
 * [spicycode`.tmux.conf`](https://gist.github.com/spicycode/1229612) (\*second best and greatest tmux.conf ever)
