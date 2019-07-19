@@ -11,8 +11,10 @@ Its just enough ide. Nothing more. Nothing less.
 ### but *Flashy*
 Just because its lightweight doesn't mean its not pretty.
 
-<!-- # Screenshots
--------------->
+Screenshot(s)
+-------------
+
+![gruvbox-demo](https://imgur.com/hjzvdCn.png)
 
 Features
 --------
