@@ -14,7 +14,11 @@ Just because its lightweight doesn't mean its not pretty.
 Screenshot(s)
 -------------
 
-![gruvbox-demo](https://imgur.com/hjzvdCn.png)
+![htop](https://imgur.com/Sddfmye.png)
+
+![fullscreen](https://imgur.com/hjzvdCn.png)
+
+![vim](https://imgur.com/ZAuwWYw.png)
 
 Features
 --------
