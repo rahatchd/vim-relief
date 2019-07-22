@@ -2,6 +2,9 @@
 # [[ $TERM != "screen" ]] && exec tmux # use only on LINUX
 # WARNING: can cause macOS terminal to terminate on open
 
+# promptline
+[[ -f ~/.promptline.sh ]] && . ~/.promptline.sh
+
 # aliases
 alias vimrc="vim ~/.vimrc && vim +PluginClean +qall && vim +PluginInstall +qall"
 alias tmuxconf="vim ~/.tmux.conf && tmux source-file ~/.tmux.conf"
