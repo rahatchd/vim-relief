@@ -97,10 +97,11 @@ Installation
 2. Install a [nerd-font](http://nerdfonts.com/) and enable it in your terminal (installation to be automated)  
 3. Run `. install.sh` from the repo root dir
 4. Install a [terminal](https://mayccoll.github.io/Gogh/)/[vim](https://github.com/rafi/awesome-vim-colorschemes)/[vim-airline](https://github.com/vim-airline/vim-airline-themes/tree/master/autoload/airline/themes) theme
-  1. During the installation, edit `.vimrc` to apply your theme
+  1. To configure the promptline, during the installation, edit `.vimrc` to apply your theme
      Then run `:AirlineTheme <theme>`
      and `:PromptlineSnapshot ~/.promptline.sh airline` and exit vim
      Then source `~/.promptline.sh`
+     (not recommended without nerd font + powerline font)
 
 Upcoming Features
 -----------------

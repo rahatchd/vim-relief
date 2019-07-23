@@ -64,7 +64,6 @@ let g:airline_right_sep=right_sep
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#left_sep=left_sep
 let g:airline#extensions#tabline#right_sep=right_sep
-PromptlineSnapshot ~/.promptline.sh airline
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
