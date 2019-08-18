@@ -100,6 +100,10 @@ Installation
      and `:PromptlineSnapshot ~/.promptline.sh airline` and exit vim
      Then source `~/.promptline.sh`
      (not recommended without nerd font + powerline font)
+  2. To configure tmuxline on start, take a snapshot of the tmuxline configuration (run both tmux and vim)
+  ```
+  :TmuxlineSnapshot ~/.tmux_status.conf
+  ```
 
 Upcoming Features
 -----------------
