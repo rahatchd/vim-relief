@@ -1,6 +1,6 @@
 vim-relief
 ==========
-> a minimal but flashy tmux.vim desktop/IDE `.dotfile` conf
+> a minimal but flashy tmux.vim configuration
 
 Philosophy
 ---------
@@ -48,12 +48,12 @@ Plugin 'vim-airline'
 ```
 * create multiple panes with intuitive bindings
 ```
-prefix + | (horizontal split)
+prefix + \ (horizontal split)
 prefix + - (vertical split)
 ```
 * traverse across vim and tmux panes with vim-esque ease
 ```
-ctrl + h|j|k|l
+ctrl + Left|Down|Up|Right
 ```
 * use sensible standards everybody agrees on, not esoteric idiosyncrasies everybody disagrees on
 ```
@@ -73,10 +73,8 @@ Plugin 'nerdtree-git-plugin'
 Inspiration
 -----------
 
-I would be remiss not to acknowledge:
-1. [gruvbox](https://github.com/morhetz/gruvbox) for the OG theme of vim-relief (not pre-installed with theme now),
-2. [desktop](https://www.reddit.com/r/desktops/) for the motivation to compile this conf,
-3. and my colleague [Hatef](https://github.com/wildthingz), who got me started on my journey to minimal but flashy development.
+I would be remiss not to acknowledge my colleague [Hatef](https://github.com/wildthingz),
+who got me started on my journey to minimal but flashy workflows.
 
 Installation
 ------------
@@ -184,7 +182,7 @@ Worth a `README.md`
 * [vim-ctrlspace](https://github.com/vim-ctrlspace/vim-ctrlspace/blob/master/doc/ctrlspace.txt)
 * [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 * [vim + tmux pane titles](https://stackoverflow.com/questions/15123477/tmux-tabs-with-name-of-file-open-in-vim/15842066#15842066)
-* [spicycode`.tmux.conf`](https://gist.github.com/spicycode/1229612) (\*second best and greatest tmux.conf ever)
+* [spicycode`.tmux.conf`](https://gist.github.com/spicycode/1229612) (second\* best and greatest tmux.conf ever)
 * [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 * [Devicons nerd-font](https://github.com/ryanoasis/vim-devicons/wiki/Installation)
 * [ycm vs jedi-vim](https://github.com/davidhalter/jedi-vim/issues/119)

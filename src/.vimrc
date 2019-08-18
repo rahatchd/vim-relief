@@ -53,9 +53,10 @@ let g:auto_save=1
 
 " theme
 " colorscheme gruvbox "<-- pick theme
+set background=dark
 
 " vim-airline
-" let g:airline_theme='cobalt2' "<-- pick theme
+let g:airline_theme='minimalist' "<-- pick theme
 let left_sep="\uE0B0"
 let right_sep="\uE0B2"
 let g:airline_powerline_fonts=1
