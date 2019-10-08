@@ -26,13 +26,13 @@ done
 
 # source dotfiles
 echo "source ~/.reliefrc" >> ~/.bashrc
+
 # vim deps/conf
 if [ ! -d ~/.vim/bundle/Vundle.vim  ]; then
     echo "installing Vundle (may require git login)"
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
-vim +PluginClean +qall
-vim +PluginInstall +qall
+vim +PlugInstall
 vim_python=$(vim --version | grep "+python")
 if [[ $(vim --version | grep "+python3") ]]; then
     echo "if you haven't already, manually install ycm (code autocompletion) using python 3.5"

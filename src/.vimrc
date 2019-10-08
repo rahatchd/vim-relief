@@ -1,42 +1,37 @@
 set number
-syntax on
 highlight Normal ctermbg=none
 
-" Vundle
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-sensible'
-Plugin 'vim-ctrlspace/vim-ctrlspace'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'tmux-plugins/vim-tmux-focus-events'
-Plugin 'vim-scripts/vim-auto-save'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-sleuth'
-Plugin 'craigemery/vim-autotag'
-Plugin 'majutsushi/tagbar'
-" Plugin 'morhetz/gruvbox' "<-- choose theme
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'edkolev/promptline.vim'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ryanoasis/vim-devicons'
-Plugin 'vwxyutarooo/nerdtree-devicons-syntax'
-Plugin 'airblade/vim-gitgutter' 
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'plytophogy/vim-virtualenv'
-Plugin 'w0rp/ale'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'alvan/vim-closetag'
-call vundle#end()
-filetype plugin indent on
+" vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'
+Plug 'vim-ctrlspace/vim-ctrlspace'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'vim-scripts/vim-auto-save'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-sleuth'
+Plug 'craigemery/vim-autotag'
+Plug 'majutsushi/tagbar'
+" Plug 'morhetz/gruvbox' "<-- choose theme
+Plug 'cespare/vim-toml'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/promptline.vim'
+Plug 'edkolev/tmuxline.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'vwxyutarooo/nerdtree-devicons-syntax'
+Plug 'airblade/vim-gitgutter' 
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'davidhalter/jedi-vim'
+Plug 'plytophogy/vim-virtualenv'
+Plug 'w0rp/ale'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'alvan/vim-closetag'
+call plug#end()
 
 " ctrl-space
 set hidden
@@ -71,14 +66,6 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-
-" jedi-vim
-let g:jedi#completions_enabled=0
-
-" javascript
-let g:javascript_plugin_jsdoc=1
-let g:javascript_plugin_ngdoc=1
-let g:javascript_plugin_flow=1
 
 " vim-closetag
 let g:closetag_filenames='*.html,*.xhtml,*.phtml,*.jsx,*.js'
