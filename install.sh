@@ -27,23 +27,16 @@ done
 # source dotfiles
 echo "source ~/.reliefrc" >> ~/.bashrc
 
-# vim deps/conf
-if [ ! -d ~/.vim/bundle/Vundle.vim  ]; then
-    echo "installing Vundle (may require git login)"
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# vim plugin manager
+if [ ! -d ~/.vim/autoload/plug.vim  ]; then
+    echo "installing vim-plug"
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 vim +PlugInstall
-vim_python=$(vim --version | grep "+python")
-if [[ $(vim --version | grep "+python3") ]]; then
-    echo "if you haven't already, manually install ycm (code autocompletion) using python 3.5"
-elif [[ $(vim --version | grep "+python") ]]; then
-    echo "if you havent' already, mannualy install ycm (code autocompletion) using python 2.7"
-else
-    echo "! cannot install ycm (code autocompletion) if vim was built without python support"
-fi
 echo "you can edit your .vimrc by using the alias vimrc"
 
-# tmux deps/conf
+# tmux plugin manager
 if [ ! -d ~/.tmux/plugins/tpm ]; then
     echo "installing tmux-plugin-manager (may require git login)"
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

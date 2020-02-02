@@ -1,6 +1,16 @@
 vim-relief
 ==========
-> a minimal but flashy tmux.vim configuration
+> a minimal but flashy tmux + vim configuration
+
+Disclaimer
+----------
+
+This project is not under active development / maintenance. Use at your own risk.  
+
+A lot has happened since I started this 'project'...
+Primarily, I've grown tired of configuring everything myself.
+I use vscode and clion now.
+That being said, I still install this on the machines I use for quick scripting / small projects.
 
 Philosophy
 ---------
@@ -28,23 +38,23 @@ relief is really functional
 * cross tool compatibility - find out what it means to me
 ```
 set -g @plugin 'tmux-pluginx/vim-tmux'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'tmux-plugins/vim-tmux-focus-events'
-Plugin 'edkolev/tmuxline.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'edkolev/tmuxline.vim'
 ```
 * are we ide yet? oh we're lsp baby
 ```
-Plugin 'vim-ctrlspace/vim-ctrlspace'
-Plugin 'craigemery/vim-autotag'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'plytophogy.vim-virtualenv'
-Plugin 'w0rp/ale'
+Plug 'vim-ctrlspace/vim-ctrlspace'
+Plug 'craigemery/vim-autotag'
+Plug 'neoclide/coc.nvim'
+Plug 'davidhalter/jedi-vim'
+Plug 'plytophogy.vim-virtualenv'
+Plug 'w0rp/ale'
 ```
 * vim and tmux sitting in a NERDTree, A.I.R.L.I.N.E
 ```
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-airline'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline'
 ```
 * create multiple panes with intuitive bindings
 ```
@@ -57,17 +67,17 @@ ctrl + Left|Down|Up|Right
 ```
 * use sensible standards everybody agrees on, not esoteric idiosyncrasies everybody disagrees on
 ```
-Plugin 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible'
 set -g @plugin 'tmux-plugins/tmux-sensible'
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 ```
 * things that should be `auto`matic are
 ```
-Plugin 'vim-scripts/vim-auto-save'
-Plugin 'tpope/vim-sleuth'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'alvan/vim-closetag'
-Plugin 'nerdtree-git-plugin'
+Plug 'vim-scripts/vim-auto-save'
+Plug 'tpope/vim-sleuth'
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'nerdtree-git-plugin'
 ```
 
 Inspiration
@@ -91,7 +101,7 @@ Installation
 
 #### Setup
 
-1. Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) (optional - to be automated)
+1. Install [nodejs](https://nodejs.org/en/) (use [nvm](https://github.com/nvm-sh/nvm) to manage multiple versions of node)
 2. Install a [nerd-font](http://nerdfonts.com/) and enable it in your terminal (installation to be automated)  
 3. Run `. install.sh` from the repo root dir
 4. Install a [terminal](https://mayccoll.github.io/Gogh/)/[vim](https://github.com/rafi/awesome-vim-colorschemes)/[vim-airline](https://github.com/vim-airline/vim-airline-themes/tree/master/autoload/airline/themes) theme
@@ -108,7 +118,6 @@ Installation
 Upcoming Features
 -----------------
 
-- [ ] auto install ycm
 - [ ] usage instructions
 
 Scope Creep
